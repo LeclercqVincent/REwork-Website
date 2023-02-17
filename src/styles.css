@@ -1,11 +1,34 @@
-/* #home {
-  background: url(assets/img/fond.webp) no-repeat center center fixed;
+/* $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap'; */
+
+#home {
+  background: url(./assets/img/fond.png) no-repeat center center fixed;
   display: table;
-  height: 100%;
+  height: 100vh;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
+
+#home .btn-scroll {
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.6);
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+.profil {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 15em;
+}
+.opacity {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
